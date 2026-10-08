@@ -1,0 +1,17 @@
+# secrets
+.env
+*.env
+# model weights and checkpoints (host on the Hugging Face Hub instead)
+*.safetensors
+*.bin
+*.pt
+outputs/
+checkpoint-*/
+# data copies (MaintIE is downloaded from its own repository)
+data/raw/
+*.jsonl
+!results/*.jsonl
+# notebook and python clutter
+.ipynb_checkpoints/
+__pycache__/
+*.log

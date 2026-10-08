@@ -1,0 +1,166 @@
+version,experiment,system,test_set,metric,value,ci_low,ci_high,p_value,n_texts,notes
+v1_teacher_pilots,teacher pilot,"DeepSeek-flash, prompt v1 (6 ex), max 1k tokens",pilot 50 gold (spans given),type_acc_exact_%,11.4,,,,50,reasoning used whole token budget
+v1_teacher_pilots,teacher pilot,"DeepSeek-flash, prompt v1 (6 ex), max 1k tokens",pilot 50 gold (spans given),type_acc_two_levels_%,14.5,,,,50,reasoning used whole token budget
+v1_teacher_pilots,teacher pilot,"DeepSeek-flash, prompt v1 (6 ex), max 1k tokens",pilot 50 gold (spans given),relation_f1,0.2,,,,50,reasoning used whole token budget
+v1_teacher_pilots,teacher pilot,"DeepSeek-flash, prompt v1 (6 ex), max 1k tokens",pilot 50 gold (spans given),relation_precision,0.87,,,,50,reasoning used whole token budget
+v1_teacher_pilots,teacher pilot,"DeepSeek-flash, prompt v1 (6 ex), max 1k tokens",pilot 50 gold (spans given),relation_recall,0.11,,,,50,reasoning used whole token budget
+v1_teacher_pilots,teacher pilot,"DeepSeek-flash, prompt v1 (6 ex), max 1k tokens",pilot 50 gold (spans given),failed_texts,40/50 invalid,,,,50,reasoning used whole token budget
+v1_teacher_pilots,teacher pilot,"DeepSeek-flash, prompt v1 (6 ex), max 4k tokens",pilot 50 gold (spans given),type_acc_exact_%,51.8,,,,50,
+v1_teacher_pilots,teacher pilot,"DeepSeek-flash, prompt v1 (6 ex), max 4k tokens",pilot 50 gold (spans given),type_acc_two_levels_%,61.4,,,,50,
+v1_teacher_pilots,teacher pilot,"DeepSeek-flash, prompt v1 (6 ex), max 4k tokens",pilot 50 gold (spans given),relation_f1,0.69,,,,50,
+v1_teacher_pilots,teacher pilot,"DeepSeek-flash, prompt v1 (6 ex), max 4k tokens",pilot 50 gold (spans given),relation_precision,0.83,,,,50,
+v1_teacher_pilots,teacher pilot,"DeepSeek-flash, prompt v1 (6 ex), max 4k tokens",pilot 50 gold (spans given),relation_recall,0.58,,,,50,
+v1_teacher_pilots,teacher pilot,"DeepSeek-flash, prompt v1 (6 ex), max 4k tokens",pilot 50 gold (spans given),failed_texts,12/50 truncated,,,,50,
+v1_teacher_pilots,teacher pilot,"Qwen3.6-27B vLLM, prompt v2 (20 ex + terms), thinking on",pilot 50 gold (spans given),type_acc_exact_%,88.0,,,,50,
+v1_teacher_pilots,teacher pilot,"Qwen3.6-27B vLLM, prompt v2 (20 ex + terms), thinking on",pilot 50 gold (spans given),type_acc_two_levels_%,92.8,,,,50,
+v1_teacher_pilots,teacher pilot,"Qwen3.6-27B vLLM, prompt v2 (20 ex + terms), thinking on",pilot 50 gold (spans given),relation_f1,0.85,,,,50,
+v1_teacher_pilots,teacher pilot,"Qwen3.6-27B vLLM, prompt v2 (20 ex + terms), thinking on",pilot 50 gold (spans given),relation_precision,0.85,,,,50,
+v1_teacher_pilots,teacher pilot,"Qwen3.6-27B vLLM, prompt v2 (20 ex + terms), thinking on",pilot 50 gold (spans given),relation_recall,0.86,,,,50,
+v1_teacher_pilots,teacher pilot,"Qwen3.6-27B vLLM, prompt v2 (20 ex + terms), thinking on",pilot 50 gold (spans given),failed_texts,2/50 unknown type,,,,50,
+v1_teacher_pilots,teacher pilot,"Qwen3.6-27B vLLM, prompt v2 (20 ex + terms), thinking off",pilot 50 gold (spans given),type_acc_exact_%,86.1,,,,50,used for labelling
+v1_teacher_pilots,teacher pilot,"Qwen3.6-27B vLLM, prompt v2 (20 ex + terms), thinking off",pilot 50 gold (spans given),type_acc_two_levels_%,91.6,,,,50,used for labelling
+v1_teacher_pilots,teacher pilot,"Qwen3.6-27B vLLM, prompt v2 (20 ex + terms), thinking off",pilot 50 gold (spans given),relation_f1,0.85,,,,50,used for labelling
+v1_teacher_pilots,teacher pilot,"Qwen3.6-27B vLLM, prompt v2 (20 ex + terms), thinking off",pilot 50 gold (spans given),relation_precision,0.84,,,,50,used for labelling
+v1_teacher_pilots,teacher pilot,"Qwen3.6-27B vLLM, prompt v2 (20 ex + terms), thinking off",pilot 50 gold (spans given),relation_recall,0.86,,,,50,used for labelling
+v1_teacher_pilots,teacher pilot,"Qwen3.6-27B vLLM, prompt v2 (20 ex + terms), thinking off",pilot 50 gold (spans given),failed_texts,3/50 unknown type,,,,50,used for labelling
+v2_teacher_labels,silver labelling,"Qwen3.6-27B, thinking off, prompt v2","silver 6,993",texts_labelled,6993,,,,,
+v2_teacher_labels,silver labelling,"Qwen3.6-27B, thinking off, prompt v2","silver 6,993",passed_validation,6709,,,,,
+v2_teacher_labels,silver labelling,"Qwen3.6-27B, thinking off, prompt v2","silver 6,993",pass_rate_%,95.9,,,,,
+v2_teacher_labels,silver labelling,"Qwen3.6-27B, thinking off, prompt v2","silver 6,993",err_unknown_entity_type,239,,,,,
+v2_teacher_labels,silver labelling,"Qwen3.6-27B, thinking off, prompt v2","silver 6,993",err_coarse_conflict,~50,,,,,
+v2_teacher_labels,silver labelling,"Qwen3.6-27B, thinking off, prompt v2","silver 6,993",err_entity_ids_mismatch,14,,,,,
+v2_teacher_labels,silver labelling,"Qwen3.6-27B, thinking off, prompt v2","silver 6,993",err_invalid_relation_indices,12,,,,,
+v2_teacher_labels,silver labelling,"Qwen3.6-27B, thinking off, prompt v2","silver 6,993",err_no_entity_list,4,,,,,
+v2_teacher_labels,silver labelling,"Qwen3.6-27B, thinking off, prompt v2","silver 6,993",output_tokens_total,898262,,,,,
+v2_teacher_labels,silver labelling,"Qwen3.6-27B, thinking off, prompt v2","silver 6,993",output_tokens_per_text,128,,,,,
+v2_teacher_labels,silver labelling,"Qwen3.6-27B, thinking off, prompt v2","silver 6,993",prompt_tokens_total,52208563,,,,,
+v2_teacher_labels,silver labelling,"Qwen3.6-27B, thinking off, prompt v2","silver 6,993",prefix_cache_hit_%_vllm_log,94,,,,,
+v2_teacher_labels,abandoned partial labelling,"DeepSeek-flash, prompt v1",silver (partial),texts_labelled,1633,,,,,not used for training
+v2_teacher_labels,abandoned partial labelling,"DeepSeek-flash, prompt v1",silver (partial),passed_validation,1443,,,,,not used for training
+v2_teacher_labels,abandoned partial labelling,"DeepSeek-flash, prompt v1",silver (partial),cost_usd,2.42,,,,,not used for training
+v2_teacher_labels,abandoned partial labelling,"DeepSeek-flash, prompt v1",silver (partial),cost_per_text_usd,0.0015,,,,,not used for training
+v3_internal_eval,student evaluation,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",internal test 826,entity_exact_precision,0.765,,,,826,
+v3_internal_eval,student evaluation,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",internal test 826,entity_exact_recall,0.784,,,,826,
+v3_internal_eval,student evaluation,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",internal test 826,entity_exact_f1,0.774,0.757,0.791,,826,
+v3_internal_eval,student evaluation,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",internal test 826,entity_two_level_precision,0.828,,,,826,
+v3_internal_eval,student evaluation,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",internal test 826,entity_two_level_recall,0.848,,,,826,
+v3_internal_eval,student evaluation,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",internal test 826,entity_two_level_f1,0.838,0.823,0.851,,826,
+v3_internal_eval,student evaluation,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",internal test 826,entity_coarse_precision,0.933,,,,826,
+v3_internal_eval,student evaluation,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",internal test 826,entity_coarse_recall,0.956,,,,826,
+v3_internal_eval,student evaluation,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",internal test 826,entity_coarse_f1,0.944,0.935,0.952,,826,
+v3_internal_eval,student evaluation,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",internal test 826,entity_span_precision,0.938,,,,826,
+v3_internal_eval,student evaluation,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",internal test 826,entity_span_recall,0.96,,,,826,
+v3_internal_eval,student evaluation,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",internal test 826,entity_span_f1,0.949,0.941,0.957,,826,
+v3_internal_eval,student evaluation,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",internal test 826,relation_spans_only_precision,0.806,,,,826,
+v3_internal_eval,student evaluation,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",internal test 826,relation_spans_only_recall,0.837,,,,826,
+v3_internal_eval,student evaluation,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",internal test 826,relation_spans_only_f1,0.821,0.801,0.842,,826,
+v3_internal_eval,student evaluation,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",internal test 826,relation_with_types_precision,0.532,,,,826,
+v3_internal_eval,student evaluation,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",internal test 826,relation_with_types_recall,0.553,,,,826,
+v3_internal_eval,student evaluation,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",internal test 826,relation_with_types_f1,0.542,0.515,0.573,,826,
+v3_internal_eval,student evaluation,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",internal test 826,invalid_json,0,,,,826,
+v3_internal_eval,per-class exact F1,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",internal test 826,entity_exact_f1_Activity,0.896,,,,,gold entities 603
+v3_internal_eval,per-class exact F1,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",internal test 826,entity_exact_f1_PhysicalObject,0.688,,,,,gold entities 1513
+v3_internal_eval,per-class exact F1,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",internal test 826,entity_exact_f1_Process,0.973,,,,,gold entities 111
+v3_internal_eval,per-class exact F1,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",internal test 826,entity_exact_f1_Property,0.964,,,,,gold entities 29
+v3_internal_eval,per-class exact F1,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",internal test 826,entity_exact_f1_State,0.874,,,,,gold entities 342
+v3_internal_eval,difficulty diagnostic,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",82 official texts,entity_exact_f1,62.5,,,,82,unseen-type entities 5.4%
+v3_internal_eval,difficulty diagnostic,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",744 rest,entity_exact_f1,79.2,,,,744,unseen-type entities 1.6%
+v3_internal_eval,difficulty diagnostic,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",826 all,entity_exact_f1,77.4,,,,826,unseen-type entities 2.0%
+v6_error_analysis,type-error attribution,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",internal test 826,type_errors_total,459,,,,,
+v6_error_analysis,type-error attribution,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",internal test 826,kind_same_class_diff_branch,281,,,,,
+v6_error_analysis,type-error attribution,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",internal test 826,kind_sibling,141,,,,,
+v6_error_analysis,type-error attribution,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",internal test 826,kind_too_general_or_specific,25,,,,,
+v6_error_analysis,type-error attribution,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",internal test 826,kind_diff_top_level,12,,,,,
+v6_error_analysis,type-error attribution,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",internal test 826,source_inherited_from_teacher,230 (50%),,,,,
+v6_error_analysis,type-error attribution,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",internal test 826,source_word_unseen_in_training,148 (32%),,,,,
+v6_error_analysis,type-error attribution,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",internal test 826,source_mixed_teacher_labels,50 (11%),,,,,
+v6_error_analysis,type-error attribution,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",internal test 826,source_genuine_student_error,31 (7%),,,,,
+v6_error_analysis,type-error attribution,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",internal test 826,predictions_with_nonexistent_type,5,,,,,
+v6_error_analysis,type-error attribution,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",internal test 826,test_types_unseen_in_training,17 types / 52 entities,,,,,
+v4_official_eval,official MaintIE test,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",official all 108,entity_exact_f1,63.8,58.9,68.7,,108,
+v4_official_eval,official MaintIE test,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",official all 108,relation_spans_only_f1,80.2,74.3,85.9,,108,
+v4_official_eval,official MaintIE test,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",official all 108,relation_with_types_f1,29.8,23.1,37.1,,108,
+v4_official_eval,official MaintIE test,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",official all 108,entity_macro_f1,42.9,,,,108,
+v4_official_eval,official MaintIE test,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",official all 108,entity_exact_precision,61.7,,,,108,
+v4_official_eval,official MaintIE test,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",official all 108,entity_exact_recall,66.0,,,,108,
+v4_official_eval,official MaintIE test,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",official all 108,relation_spans_only_precision,76.0,,,,108,
+v4_official_eval,official MaintIE test,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",official all 108,relation_spans_only_recall,85.0,,,,108,
+v4_official_eval,official MaintIE test,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",official all 108,relation_with_types_precision,28.2,,,,108,
+v4_official_eval,official MaintIE test,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",official all 108,relation_with_types_recall,31.6,,,,108,
+v4_official_eval,official MaintIE test,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",official clean 91,entity_exact_f1,61.5,56.2,66.9,,91,
+v4_official_eval,official MaintIE test,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",official clean 91,relation_spans_only_f1,80.3,74.1,86.8,,91,
+v4_official_eval,official MaintIE test,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",official clean 91,relation_with_types_f1,27.6,19.5,36.3,,91,
+v4_official_eval,official MaintIE test,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",official clean 91,entity_macro_f1,42.9,,,,91,
+v4_official_eval,official MaintIE test,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",official clean 91,entity_exact_precision,59.4,,,,91,
+v4_official_eval,official MaintIE test,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",official clean 91,entity_exact_recall,63.8,,,,91,
+v4_official_eval,official MaintIE test,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",official clean 91,relation_spans_only_precision,76.2,,,,91,
+v4_official_eval,official MaintIE test,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",official clean 91,relation_spans_only_recall,84.9,,,,91,
+v4_official_eval,official MaintIE test,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",official clean 91,relation_with_types_precision,26.2,,,,91,
+v4_official_eval,official MaintIE test,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",official clean 91,relation_with_types_recall,29.2,,,,91,
+v4_official_eval,official MaintIE test,"Mistral-7B LoRA, gold 860 (gold_official_v1)",official all 108,entity_exact_f1,58.0,,,,108,
+v4_official_eval,official MaintIE test,"Mistral-7B LoRA, gold 860 (gold_official_v1)",official all 108,relation_spans_only_f1,74.9,,,,108,
+v4_official_eval,official MaintIE test,"Mistral-7B LoRA, gold 860 (gold_official_v1)",official all 108,relation_with_types_f1,25.5,,,,108,
+v4_official_eval,official MaintIE test,"Mistral-7B LoRA, gold 860 (gold_official_v1)",official all 108,entity_macro_f1,30.2,,,,108,
+v4_official_eval,official MaintIE test,"Mistral-7B LoRA, gold 860 (gold_official_v1)",official clean 91,entity_exact_f1,57.5,,,,91,
+v4_official_eval,official MaintIE test,"Mistral-7B LoRA, gold 860 (gold_official_v1)",official clean 91,relation_spans_only_f1,76.7,,,,91,
+v4_official_eval,official MaintIE test,"Mistral-7B LoRA, gold 860 (gold_official_v1)",official clean 91,relation_with_types_f1,25.9,,,,91,
+v4_official_eval,official MaintIE test,"Mistral-7B LoRA, gold 860 (gold_official_v1)",official clean 91,entity_macro_f1,31.0,,,,91,
+v4_official_eval,official MaintIE test,"Mistral-7B LoRA, distilled 860 (distilled_860_v1)",official all 108,entity_exact_f1,55.2,,,,108,
+v4_official_eval,official MaintIE test,"Mistral-7B LoRA, distilled 860 (distilled_860_v1)",official all 108,relation_spans_only_f1,74.1,,,,108,
+v4_official_eval,official MaintIE test,"Mistral-7B LoRA, distilled 860 (distilled_860_v1)",official all 108,relation_with_types_f1,17.0,,,,108,
+v4_official_eval,official MaintIE test,"Mistral-7B LoRA, distilled 860 (distilled_860_v1)",official all 108,entity_macro_f1,25.9,,,,108,
+v4_official_eval,official MaintIE test,"Mistral-7B LoRA, distilled 860 (distilled_860_v1)",official clean 91,entity_exact_f1,54.2,,,,91,
+v4_official_eval,official MaintIE test,"Mistral-7B LoRA, distilled 860 (distilled_860_v1)",official clean 91,relation_spans_only_f1,72.9,,,,91,
+v4_official_eval,official MaintIE test,"Mistral-7B LoRA, distilled 860 (distilled_860_v1)",official clean 91,relation_with_types_f1,15.8,,,,91,
+v4_official_eval,official MaintIE test,"Mistral-7B LoRA, distilled 860 (distilled_860_v1)",official clean 91,entity_macro_f1,27.9,,,,91,
+v4_official_eval,published baseline,SpERT FG (published),official all 108,entity_exact_f1,64.43,,,,108,"MaintIE RESULTS.md, 224 types; check metric naming"
+v4_official_eval,published baseline,SpERT FG (published),official all 108,entity_macro_f1,38.86,,,,108,"MaintIE RESULTS.md, 224 types; check metric naming"
+v4_official_eval,published baseline,SpERT FG (published),official all 108,relation_with_types_f1,27.32,,,,108,"MaintIE RESULTS.md, 224 types; check metric naming"
+v4_official_eval,published baseline,SpERT FG (published),official all 108,relation_spans_only_f1,55.67,,,,108,"MaintIE RESULTS.md, 224 types; check metric naming"
+v4_official_eval,published baseline,SpERT CG+FG (published),official all 108,entity_exact_f1,55.41,,,,108,"MaintIE RESULTS.md, 224 types; check metric naming"
+v4_official_eval,published baseline,SpERT CG+FG (published),official all 108,entity_macro_f1,27.03,,,,108,"MaintIE RESULTS.md, 224 types; check metric naming"
+v4_official_eval,published baseline,SpERT CG+FG (published),official all 108,relation_with_types_f1,15.52,,,,108,"MaintIE RESULTS.md, 224 types; check metric naming"
+v4_official_eval,published baseline,SpERT CG+FG (published),official all 108,relation_spans_only_f1,71.4,,,,108,"MaintIE RESULTS.md, 224 types; check metric naming"
+v4_official_eval,published baseline,REBEL FG (published),official all 108,relation_spans_only_f1,66.67,,,,108,REBEL with entity types scored 0.00
+v4_official_eval,published baseline,REBEL CG+FG (published),official all 108,relation_spans_only_f1,76.07,,,,108,REBEL with entity types scored 0.00
+v5_controlled_comparisons,Distilled 860 vs Gold 860,A=55.2 | B=58.0,official all 108,entity_micro_f1_diff_A_minus_B,-2.8,-7.0,1.7,0.218,108,"paired bootstrap, 2,000 resamples, single training run per model"
+v5_controlled_comparisons,Distilled 860 vs Gold 860,A=74.1 | B=74.9,official all 108,relation_spans_only_diff_A_minus_B,-0.8,-7.6,5.9,0.82,108,"paired bootstrap, 2,000 resamples, single training run per model"
+v5_controlled_comparisons,Distilled 860 vs Gold 860,A=17.0 | B=25.5,official all 108,relation_with_types_diff_A_minus_B,-8.5,-15.5,-1.8,0.007,108,"paired bootstrap, 2,000 resamples, single training run per model"
+v5_controlled_comparisons,Distilled 860 vs Gold 860,A=25.9 | B=30.2,official all 108,entity_macro_f1_diff_A_minus_B,-4.3,-8.1,0.4,0.08,108,"paired bootstrap, 2,000 resamples, single training run per model"
+v5_controlled_comparisons,"Distilled 6,709 vs Distilled 860",A=63.8 | B=55.2,official all 108,entity_micro_f1_diff_A_minus_B,8.6,5.7,11.5,<0.001,108,"paired bootstrap, 2,000 resamples, single training run per model"
+v5_controlled_comparisons,"Distilled 6,709 vs Distilled 860",A=80.2 | B=74.1,official all 108,relation_spans_only_diff_A_minus_B,6.2,-0.4,12.4,0.062,108,"paired bootstrap, 2,000 resamples, single training run per model"
+v5_controlled_comparisons,"Distilled 6,709 vs Distilled 860",A=29.8 | B=17.0,official all 108,relation_with_types_diff_A_minus_B,12.8,7.9,18.1,<0.001,108,"paired bootstrap, 2,000 resamples, single training run per model"
+v5_controlled_comparisons,"Distilled 6,709 vs Distilled 860",A=42.9 | B=25.9,official all 108,entity_macro_f1_diff_A_minus_B,17.0,11.2,19.0,<0.001,108,"paired bootstrap, 2,000 resamples, single training run per model"
+v5_controlled_comparisons,"Distilled 6,709 vs Gold 860",A=63.8 | B=58.0,official all 108,entity_micro_f1_diff_A_minus_B,5.8,2.0,9.9,0.003,108,"paired bootstrap, 2,000 resamples, single training run per model"
+v5_controlled_comparisons,"Distilled 6,709 vs Gold 860",A=80.2 | B=74.9,official all 108,relation_spans_only_diff_A_minus_B,5.3,-1.8,12.9,0.131,108,"paired bootstrap, 2,000 resamples, single training run per model"
+v5_controlled_comparisons,"Distilled 6,709 vs Gold 860",A=29.8 | B=25.5,official all 108,relation_with_types_diff_A_minus_B,4.3,-2.6,11.2,0.219,108,"paired bootstrap, 2,000 resamples, single training run per model"
+v5_controlled_comparisons,"Distilled 6,709 vs Gold 860",A=42.9 | B=30.2,official all 108,entity_macro_f1_diff_A_minus_B,12.7,6.7,16.2,<0.001,108,"paired bootstrap, 2,000 resamples, single training run per model"
+v5_controlled_comparisons,Distilled 860 vs Gold 860,A=54.2 | B=57.5,official clean 91,entity_micro_f1_diff_A_minus_B,-3.3,-7.6,1.0,0.124,91,"paired bootstrap, 2,000 resamples, single training run per model"
+v5_controlled_comparisons,Distilled 860 vs Gold 860,A=72.9 | B=76.7,official clean 91,relation_spans_only_diff_A_minus_B,-3.8,-10.5,3.4,0.293,91,"paired bootstrap, 2,000 resamples, single training run per model"
+v5_controlled_comparisons,Distilled 860 vs Gold 860,A=15.8 | B=25.9,official clean 91,relation_with_types_diff_A_minus_B,-10.1,-17.6,-3.3,0.002,91,"paired bootstrap, 2,000 resamples, single training run per model"
+v5_controlled_comparisons,Distilled 860 vs Gold 860,A=27.9 | B=31.0,official clean 91,entity_macro_f1_diff_A_minus_B,-3.1,-7.9,1.5,0.19,91,"paired bootstrap, 2,000 resamples, single training run per model"
+v5_controlled_comparisons,"Distilled 6,709 vs Distilled 860",A=61.5 | B=54.2,official clean 91,entity_micro_f1_diff_A_minus_B,7.3,4.2,10.5,<0.001,91,"paired bootstrap, 2,000 resamples, single training run per model"
+v5_controlled_comparisons,"Distilled 6,709 vs Distilled 860",A=80.3 | B=72.9,official clean 91,relation_spans_only_diff_A_minus_B,7.4,0.4,14.2,0.042,91,"paired bootstrap, 2,000 resamples, single training run per model"
+v5_controlled_comparisons,"Distilled 6,709 vs Distilled 860",A=27.6 | B=15.8,official clean 91,relation_with_types_diff_A_minus_B,11.8,6.5,17.6,<0.001,91,"paired bootstrap, 2,000 resamples, single training run per model"
+v5_controlled_comparisons,"Distilled 6,709 vs Distilled 860",A=42.9 | B=27.9,official clean 91,entity_macro_f1_diff_A_minus_B,15.0,9.1,17.7,<0.001,91,"paired bootstrap, 2,000 resamples, single training run per model"
+v5_controlled_comparisons,"Distilled 6,709 vs Gold 860",A=61.5 | B=57.5,official clean 91,entity_micro_f1_diff_A_minus_B,4.0,-0.0,8.3,0.051,91,"paired bootstrap, 2,000 resamples, single training run per model"
+v5_controlled_comparisons,"Distilled 6,709 vs Gold 860",A=80.3 | B=76.7,official clean 91,relation_spans_only_diff_A_minus_B,3.6,-3.4,10.5,0.286,91,"paired bootstrap, 2,000 resamples, single training run per model"
+v5_controlled_comparisons,"Distilled 6,709 vs Gold 860",A=27.6 | B=25.9,official clean 91,relation_with_types_diff_A_minus_B,1.7,-6.0,9.4,0.629,91,"paired bootstrap, 2,000 resamples, single training run per model"
+v5_controlled_comparisons,"Distilled 6,709 vs Gold 860",A=42.9 | B=31.0,official clean 91,entity_macro_f1_diff_A_minus_B,11.9,4.8,15.5,<0.001,91,"paired bootstrap, 2,000 resamples, single training run per model"
+v3_training_runs,training,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",,train_examples,6709,,,,,
+v3_training_runs,training,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",,epochs,2,,,,,
+v3_training_runs,training,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",,steps,840,,,,,
+v3_training_runs,training,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",,final_train_loss,0.187,,,,,
+v3_training_runs,training,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",,final_val_loss,0.271,,,,,
+v3_training_runs,training,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",,mean_token_accuracy,0.953,,,,,
+v3_training_runs,training,"Mistral-7B LoRA, distilled 6,709 (distilled_qwen_nothink_v1)",,val_set,internal val 100,,,,,
+v3_training_runs,training,"Mistral-7B LoRA, gold 860 (gold_official_v1)",,train_examples,860,,,,,
+v3_training_runs,training,"Mistral-7B LoRA, gold 860 (gold_official_v1)",,epochs_max,5,,,,,
+v3_training_runs,training,"Mistral-7B LoRA, gold 860 (gold_official_v1)",,best_step,100,,,,,
+v3_training_runs,training,"Mistral-7B LoRA, gold 860 (gold_official_v1)",,best_val_loss,0.364,,,,,
+v3_training_runs,training,"Mistral-7B LoRA, gold 860 (gold_official_v1)",,final_val_loss_step270,0.421,,,,,
+v3_training_runs,training,"Mistral-7B LoRA, gold 860 (gold_official_v1)",,val_set,official dev 108,,,,,
+v3_training_runs,training,"Mistral-7B LoRA, distilled 860 (distilled_860_v1)",,train_examples,860,,,,,
+v3_training_runs,training,"Mistral-7B LoRA, distilled 860 (distilled_860_v1)",,epochs_max,5,,,,,
+v3_training_runs,training,"Mistral-7B LoRA, distilled 860 (distilled_860_v1)",,val_set,official dev 108,,,,,
+v3_training_runs,training,"Mistral-7B LoRA, distilled 860 (distilled_860_v1)",,training_log,TO ADD,,,,,
