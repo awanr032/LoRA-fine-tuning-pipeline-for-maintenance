@@ -147,6 +147,12 @@ Full numbers with confidence intervals and p-values: [`results/RESULTS_REGISTRY.
 ## Repository layout
 
 ```
+src/maintie_lora/
+  evaluate.py                                 scoring (parse_json, locate, score_text, prf, macro_from, ...)
+                                               shared by notebooks 05, 07 and 08, which used to each carry
+                                               their own copy
+tests/
+  test_evaluate.py                            unit tests for src/maintie_lora/evaluate.py
 notebooks/
   01_teacher_labelling_deepseek_api.ipynb     first teacher (API), kept for the record
   02_teacher_labelling_selfhosted_vllm.ipynb  final teacher: Qwen3.6-27B on vLLM
@@ -163,6 +169,16 @@ results/
   RESULTS_REGISTRY.md                         every number in the project, versioned
   all_results.csv                             the same, machine-readable
 docs/lessons_learned.md
+```
+
+Each Colab notebook clones this repository and adds `src/` to `sys.path` so it can import
+`maintie_lora.evaluate` instead of redefining the same scoring functions locally.
+
+## Development
+
+```
+pip install -e ".[dev]"
+pytest
 ```
 
 ## Reproducing
